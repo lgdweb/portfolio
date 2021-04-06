@@ -6,15 +6,17 @@
   "name": "tituxmetal-portfolio",
   "version": "1.2.0",
   "scripts": {
-    "clear": "rm -rf ./.cache ./dist",
+    "clear": "rm -rf ./.parcel-cache ./dist",
     "build": "yarn clear && parcel build ./src/index.html --public-url ./",
     "lint": "prettier-standard 'src/**' --lint",
     "watch": "parcel serve -p 3000 ./src/index.html"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "autoprefixer": "^10.2.5",
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.9",
     "prettier-standard": "^16.4.1",
-    "sass": "^1.32.8"
+    "tailwindcss": "^2.1.1"
   },
   "browserslist": [
     ">0.8%",
