@@ -1,0 +1,16 @@
+@import '@fontsource/courgette';
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/800.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  h1 {
+    @apply text-4xl text-secondary font-cursive text-center mb-6;
+  }
+  p {
+    @apply py-2 font-extrabold text-2xl text-center;
+  }
+}
